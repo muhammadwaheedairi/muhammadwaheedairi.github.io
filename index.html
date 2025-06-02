@@ -1,28 +1,471 @@
-
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Official portfolio of Muhammad Waheed, a developer with social media presence on GitHub, LinkedIn, and more." />
-  <title>Muhammad Waheed – Developer</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Waheed - Digital Creator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <div class="flex flex-col items-center justify-center min-h-screen p-6">
-    <div class="bg-white shadow-xl rounded-2xl p-8 max-w-lg w-full text-center">
-      <h1 class="text-3xl font-bold mb-2">Muhammad Waheed</h1>
-      <p class="text-lg text-gray-600 mb-4">Developer</p>
-      <div class="flex flex-wrap justify-center gap-4 mt-6">
-        <a href="https://facebook.com/muhammadwaheedairi" target="_blank" class="text-blue-600 hover:underline">Facebook</a>
-        <a href="https://instagram.com/muhammadwaheedairi" target="_blank" class="text-pink-500 hover:underline">Instagram</a>
-        <a href="https://www.threads.net/@muhammadwaheedairi" target="_blank" class="text-black hover:underline">Threads</a>
-        <a href="https://www.snapchat.com/add/muhammadwaheedairi" target="_blank" class="text-yellow-500 hover:underline">Snapchat</a>
-        <a href="https://github.com/muhammadwaheedairi" target="_blank" class="text-gray-900 hover:underline">GitHub</a>
-        <a href="https://linkedin.com/in/muhammadwaheedairi" target="_blank" class="text-blue-700 hover:underline">LinkedIn</a>
-        <a href="https://discord.com/users/muhammadwaheedairi" target="_blank" class="text-indigo-600 hover:underline">Discord</a>
-        <a href="https://pinterest.com/muhammadwaheedairi" target="_blank" class="text-red-600 hover:underline">Pinterest</a>
-      </div>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="nav-brand">
+                <div class="logo-container">
+                    <img src="images/logo.jpg" alt="Muhammad Waheed" class="profile-logo">
+                    <span class="brand-text">Waheed</span>
+                </div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="#socials" class="nav-link">Socials</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>✨ Welcome to my digital world</span>
+                </div>
+                <h1 class="hero-title">Muhammad Waheed</h1>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="images/profile-photo.jpg" alt="Muhammad Waheed" class="profile-photo">
+                        <div class="image-glow"></div>
+                    </div>
+                </div>
+                <p class="hero-tagline">Digital Creator • Social Explorer • Building Presence</p>
+                <button class="cta-button" onclick="scrollToSection('about')">
+                    <span>Explore My Journey</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know the person behind the digital presence</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card">
+                    <div class="about-text">
+                        <div class="text-block">
+                            <div class="text-icon">🏙️</div>
+                            <div class="text-content">
+                                <h3>From Karachi, Pakistan</h3>
+                                <p>I am from Karachi, Pakistan, a vibrant city that has shaped my perspective on life and creativity. The energy of this bustling metropolis flows through everything I create.</p>
+                            </div>
+                        </div>
+                        <div class="text-block">
+                            <div class="text-icon">💻</div>
+                            <div class="text-content">
+                                <h3>Passionate Creator</h3>
+                                <p>I love coding, music, reading, and exploring new things. There's something magical about discovering new technologies, getting lost in a good book, or finding that perfect melody that speaks to your soul.</p>
+                            </div>
+                        </div>
+                        <div class="text-block">
+                            <div class="text-icon">🤖</div>
+                            <div class="text-content">
+                                <h3>AI Enthusiast</h3>
+                                <p>Currently exploring AI, especially agentic AI. The future of artificial intelligence fascinates me, and I'm diving deep into how AI agents can transform the way we interact with technology.</p>
+                            </div>
+                        </div>
+                        <div class="text-block">
+                            <div class="text-icon">🚀</div>
+                            <div class="text-content">
+                                <h3>Life Philosophy</h3>
+                                <p>Keep learning, keep building, stay dedicated and consistent, and sometimes travel to new places. This philosophy guides everything I do – from my daily coding sessions to planning my next adventure.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="socials" id="socials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Connect With Me</h2>
+                <p class="section-subtitle">Follow my journey across different platforms</p>
+            </div>
+            <div class="social-grid">
+                <div class="social-card">
+                    <div class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p class="username">@muhammadwaheedairi</p>
+                    <p class="social-desc">Sharing life updates and connecting with friends</p>
+                    <a href="https://facebook.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Follow</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card">
+                    <div class="social-icon instagram">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p class="username">@muhammadwaheedairi</p>
+                    <p class="social-desc">Visual stories and creative moments</p>
+                    <a href="https://instagram.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Follow</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card">
+                    <div class="social-icon threads">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.01v-.017c.024-3.585 1.205-6.34 3.515-8.184C7.014 2.15 9.868 1.299 13.444 1.299c3.585.024 6.34 1.205 8.184 3.515 1.659 2.014 2.51 4.868 2.51 8.444-.024 3.585-1.205 6.34-3.515 8.184-2.014 1.659-4.868 2.51-8.437 2.558zm.01-2.751c2.91-.02 5.279-.946 6.835-2.674 1.436-1.588 2.164-3.946 2.164-7.007 0-3.07-.728-5.428-2.164-7.013-1.556-1.725-3.925-2.651-6.835-2.67-2.91.019-5.279.945-6.835 2.67-1.436 1.585-2.164 3.944-2.164 7.013 0 3.061.728 5.419 2.164 7.007 1.556 1.728 3.925 2.654 6.835 2.674z"/>
+                        </svg>
+                    </div>
+                    <h3>Threads</h3>
+                    <p class="username">@muhammadwaheedairi</p>
+                    <p class="social-desc">Quick thoughts and conversations</p>
+                    <a href="https://threads.net/@muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Follow</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card">
+                    <div class="social-icon twitter">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </div>
+                    <h3>Twitter/X</h3>
+                    <p class="username">@mwaheedairi</p>
+                    <p class="social-desc">Tech insights and random thoughts</p>
+                    <a href="https://x.com/mwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Follow</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card">
+                    <div class="social-icon snapchat">
+                        <i class="fab fa-snapchat-ghost"></i>
+                    </div>
+                    <h3>Snapchat</h3>
+                    <p class="username">@mwaheedairi</p>
+                    <p class="social-desc">Behind-the-scenes moments</p>
+                    <a href="https://snapchat.com/add/mwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Add</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card">
+                    <div class="social-icon pinterest">
+                        <i class="fab fa-pinterest"></i>
+                    </div>
+                    <h3>Pinterest</h3>
+                    <p class="username">@muhammadwaheedairi</p>
+                    <p class="social-desc">Design inspiration and ideas</p>
+                    <a href="https://pinterest.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Follow</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card">
+                    <div class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p class="username">@muhammadwaheedairi</p>
+                    <p class="social-desc">Professional updates and networking</p>
+                    <a href="https://linkedin.com/in/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Connect</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="social-card">
+                    <div class="social-icon discord">
+                        <i class="fab fa-discord"></i>
+                    </div>
+                    <h3>Discord</h3>
+                    <p class="username">@muhammadwaheedairi</p>
+                    <p class="social-desc">Gaming and community discussions</p>
+                    <a href="https://discord.com/users/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="social-btn">
+                        <span>Message</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My Personal Gallery</h2>
+                <p class="section-subtitle">A collection of moments that define my journey</p>
+            </div>
+            
+            <!-- Uniform Grid Gallery -->
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('images/gallery-1.jpg', 0)">
+                    <img src="images/gallery-1.jpg" alt="Personal Moment 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Travel Adventures</h3>
+                            <p>Exploring new horizons</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('images/gallery-2.jpg', 1)">
+                    <img src="images/gallery-2.jpg" alt="Personal Moment 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Tech Setup</h3>
+                            <p>My coding workspace</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('images/gallery-3.jpg', 2)">
+                    <img src="images/gallery-3.jpg" alt="Personal Moment 3" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Creative Works</h3>
+                            <p>Artistic expressions</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('images/gallery-4.jpg', 3)">
+                    <img src="images/gallery-4.jpg" alt="Personal Moment 4" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Daily Moments</h3>
+                            <p>Life in frames</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('images/gallery-5.jpg', 4)">
+                    <img src="images/gallery-5.jpg" alt="Personal Moment 5" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Nature Walks</h3>
+                            <p>Finding peace outdoors</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('images/gallery-6.jpg', 5)">
+                    <img src="images/gallery-6.jpg" alt="Personal Moment 6" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Learning Journey</h3>
+                            <p>Continuous growth</p>
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to start a conversation? I'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Me</h3>
+                                <a href="mailto:muhammadwaheedairi@gmail.com" class="contact-link">
+                                    muhammadwaheedairi@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Karachi, Pakistan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Response Time</h3>
+                                <p>Usually within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials">
+                        <h3>Follow Me</h3>
+                        <div class="social-links">
+                            <a href="https://facebook.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link facebook" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://instagram.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link instagram" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://threads.net/@muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link threads" title="Threads">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.01v-.017c.024-3.585 1.205-6.34 3.515-8.184C7.014 2.15 9.868 1.299 13.444 1.299c3.585.024 6.34 1.205 8.184 3.515 1.659 2.014 2.51 4.868 2.51 8.444-.024 3.585-1.205 6.34-3.515 8.184-2.014 1.659-4.868 2.51-8.437 2.558zm.01-2.751c2.91-.02 5.279-.946 6.835-2.674 1.436-1.588 2.164-3.946 2.164-7.007 0-3.07-.728-5.428-2.164-7.013-1.556-1.725-3.925-2.651-6.835-2.67-2.91.019-5.279.945-6.835 2.67-1.436 1.585-2.164 3.944-2.164 7.013 0 3.061.728 5.419 2.164 7.007 1.556 1.728 3.925 2.654 6.835 2.674z"/>
+                                </svg>
+                            </a>
+                            <a href="https://x.com/mwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link twitter" title="Twitter/X">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.80l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                                </svg>
+                            </a>
+                            <a href="https://snapchat.com/add/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link snapchat" title="Snapchat">
+                                <i class="fab fa-snapchat-ghost"></i>
+                            </a>
+                            <a href="https://pinterest.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link pinterest" title="Pinterest">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link linkedin" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://discord.com/users/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="contact-social-link discord" title="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo-container">
+                        <img src="images/profile-photo.jpg" alt="Muhammad Waheed" class="profile-logo">
+                        <span class="brand-text">Waheed</span>
+                    </div>
+                    <p class="footer-desc">Digital Creator passionate about technology, creativity, and connecting with amazing people around the world.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Social Media</h4>
+                        <ul>
+                            <li><a href="https://instagram.com/muhammadwaheedairi" target="_blank">Instagram</a></li>
+                            <li><a href="https://x.com/mwaheedairi" target="_blank">Twitter/X</a></li>
+                            <li><a href="https://linkedin.com/in/muhammadwaheedairi" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://github.com/muhammadwaheedairi" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-text">Made with 💙 by Muhammad Waheed • © 2024 All rights reserved</p>
+                <div class="footer-socials">
+                    <a href="https://facebook.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://threads.net/@muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12.186 24h-.007c-3.581-.024-6.334-1.205-8.184-3.509C2.35 18.44 1.5 15.586 1.5 12.01v-.017c.024-3.585 1.205-6.34 3.515-8.184C7.014 2.15 9.868 1.299 13.444 1.299c3.585.024 6.34 1.205 8.184 3.515 1.659 2.014 2.51 4.868 2.51 8.444-.024 3.585-1.205 6.34-3.515 8.184-2.014 1.659-4.868 2.51-8.437 2.558zm.01-2.751c2.91-.02 5.279-.946 6.835-2.674 1.436-1.588 2.164-3.946 2.164-7.007 0-3.07-.728-5.428-2.164-7.013-1.556-1.725-3.925-2.651-6.835-2.67-2.91.019-5.279.945-6.835 2.67-1.436 1.585-2.164 3.944-2.164 7.013 0 3.061.728 5.419 2.164 7.007 1.556 1.728 3.925 2.654 6.835 2.674z"/>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/mwaheedairi" target="_blank" rel="noopener noreferrer" class="footer-social-link">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.80l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/muhammadwaheedairi" target="_blank" rel="noopener noreferrer" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <button class="lightbox-nav prev" onclick="lightboxNav(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav next" onclick="lightboxNav(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <img src="images/gallery-1.jpg" alt="Gallery Image" id="lightboxImage">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle">Image Title</h3>
+                <p id="lightboxDesc">Image description</p>
+            </div>
+        </div>
     </div>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
