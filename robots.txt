@@ -1,0 +1,69 @@
+# Robots.txt for Muhammad Waheed Airi's Personal Website
+# https://muhammadwaheedairi.github.io/
+
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+# Allow social media crawlers for better sharing
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Disallow access to sensitive files and directories
+Disallow: /private/
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /.env
+Disallow: /config/
+Disallow: /logs/
+Disallow: /*.log$
+
+# Allow access to CSS, JS, and image files for proper rendering
+Allow: /style.css
+Allow: /script.js
+Allow: /images/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+
+# Sitemap location
+Sitemap: https://muhammadwaheedairi.github.io/sitemap.xml
+
+# Host directive (preferred domain)
+Host: https://muhammadwaheedairi.github.io
+
+# Crawl-delay for general bots (in seconds)
+Crawl-delay: 2
+
+# Additional directives for better SEO
+# Clean-param: utm_source&utm_medium&utm_campaign&utm_content&utm_term
+# This removes tracking parameters from URLs to prevent duplicate content
